@@ -7,7 +7,7 @@ from mlc_chat import  ChatConfig, ConvConfig
 conv_config = ConvConfig(system='Always return code and not just steps')
 chat_config = ChatConfig(max_gen_len=1024,conv_config=conv_config)
 
-cm = ChatModule(model="/workspace/dist/prebuilt/mlc-chat-WizardCoder-15B-V1.0-q4f16_1", lib_path="/workspace/dist/prebuilt/lib/WizardCoder-15B-V1.0-q4f16_1-cuda.so", chat_config=chat_config)
+cm = ChatModule(model="/workspace/pvtllm/dist/prebuilt/mlc-chat-WizardCoder-15B-V1.0-q4f16_1", lib_path="/workspace/pvtllm/dist/prebuilt/lib/WizardCoder-15B-V1.0-q4f16_1-cuda.so", chat_config=chat_config)
 
 app = Flask(__name__)
 # Enable CORS for all domains on all routes
